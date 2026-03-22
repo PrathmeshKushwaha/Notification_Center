@@ -9,3 +9,6 @@ dist/
 alembic/versions/__pycache__/
 kubectl
 minikube*
+# Large binaries
+kubectl
+minikube*
