@@ -10,6 +10,8 @@ from app.core.config import settings
 from app.models.notification import Base as NotificationBase
 from app.models.template import Base as TemplateBase
 from app.models.preference import Base as PreferenceBase
+from app.models.base import Base
+from app.models import notification, template, preference
 
 config = context.config
 
