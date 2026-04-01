@@ -78,6 +78,13 @@ services:
       - "5555:5555"
     depends_on:
       - rabbitmq
+    
+  pushgateway:
+    image: prom/pushgateway:latest
+    container_name: pulse_pushgateway
+    ports:
+      - "9091:9091"
+    restart: unless-stopped
 
 volumes:
   postgres_data:

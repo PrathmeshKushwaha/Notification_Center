@@ -1,5 +1,6 @@
 import json
 import logging
+import asyncio
 from typing import Dict
 from fastapi import WebSocket
 import redis.asyncio as aioredis
@@ -26,6 +27,7 @@ class ConnectionManager:
         if websocket:
             try:
                 await websocket.send_json(message)
+                logger.info(f"WS pushed to {user_id}")
                 return True
             except Exception as e:
                 logger.error(f"WS send failed for {user_id}: {e}")
@@ -35,22 +37,31 @@ class ConnectionManager:
     async def publish(self, user_id: str, message: dict):
         redis = aioredis.from_url(settings.redis_url, decode_responses=True)
         try:
-            await redis.publish(
-                f"ws:{user_id}",
-                json.dumps(message)
-            )
+            await redis.publish(f"ws:{user_id}", json.dumps(message))
+            logger.info(f"Published to Redis ws:{user_id}")
         finally:
             await redis.aclose()
 
     async def start_listener(self):
+        logger.info("Starting Redis pub/sub listener")
         redis = aioredis.from_url(settings.redis_url, decode_responses=True)
         pubsub = redis.pubsub()
         await pubsub.psubscribe("ws:*")
-        async for message in pubsub.listen():
-            if message["type"] == "pmessage":
-                user_id = message["channel"].split(":", 1)[1]
-                data = json.loads(message["data"])
-                await self.send_to_user(user_id, data)
+        logger.info("Subscribed to ws:* channels")
+        try:
+            async for message in pubsub.listen():
+                if message["type"] == "pmessage":
+                    try:
+                        user_id = message["channel"].split(":", 1)[1]
+                        data = json.loads(message["data"])
+                        await self.send_to_user(user_id, data)
+                    except Exception as e:
+                        logger.error(f"Listener error: {e}")
+        except asyncio.CancelledError:
+            logger.info("Redis listener cancelled")
+        finally:
+            await pubsub.unsubscribe()
+            await redis.aclose()
 
 
 manager = ConnectionManager()

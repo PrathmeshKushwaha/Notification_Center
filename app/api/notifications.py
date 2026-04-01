@@ -78,21 +78,15 @@ async def send_notification(
     db.add(notification)
     await db.flush()
 
-    # Queue task
     try:
-        from app.workers.celery_app import celery_app
-        from app.workers.email_worker import deliver_email
-        from app.workers.websocket_worker import deliver_websocket
-        from app.workers.webhook_worker import deliver_webhook
+        if payload.channel == NotificationChannel.email:
+            from app.workers.email_worker import deliver_email as task
+        elif payload.channel == NotificationChannel.websocket:
+            from app.workers.websocket_worker import deliver_websocket as task
+        elif payload.channel == NotificationChannel.webhook:
+            from app.workers.webhook_worker import deliver_webhook as task
 
-        task_map = {
-            NotificationChannel.email: deliver_email,
-            NotificationChannel.websocket: deliver_websocket,
-            NotificationChannel.webhook: deliver_webhook,
-        }
         priority_map = {"critical": 10, "high": 7, "normal": 5, "low": 1}
-
-        task = task_map[payload.channel]
         task.apply_async(
             args=[notification.id],
             priority=priority_map.get(payload.priority, 5)
