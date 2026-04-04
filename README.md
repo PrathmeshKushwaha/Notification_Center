@@ -8,12 +8,19 @@ A production-grade multi-channel notification platform built with Python, FastAP
 
 Client → FastAPI (API Gateway)
 ├── PostgreSQL (notification log, templates, preferences)
+
 ├── Redis (idempotency keys, WebSocket pub/sub)
+
 └── RabbitMQ (priority queues per channel)
+
 ├── Email Worker (Celery + SMTP)
+
 ├── WebSocket Worker (Celery + Redis pub/sub)
+
 ├── Webhook Worker (Celery + HMAC-signed HTTP POST)
+
 └── DLQ Worker (dead-letter monitor)
+
 └── Prometheus + Pushgateway + Grafana
 
 ---
