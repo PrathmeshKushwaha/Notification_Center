@@ -6,7 +6,7 @@ A production-grade multi-channel notification platform built with Python, FastAP
 
 ## Architecture
 
-Client → FastAPI (API Gateway)
+Client → FastAPI (API Gateway)<br>
 ├── PostgreSQL (notification log, templates, preferences)<br>
 ├── Redis (idempotency keys, WebSocket pub/sub)<br>
 └── RabbitMQ (priority queues per channel)<br>
