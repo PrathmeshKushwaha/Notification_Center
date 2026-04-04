@@ -61,8 +61,7 @@ def deliver_email(self, notification_id: str):
                     tmpl.subject or "Notification"
                 ).render(**variables)
 
-        #to_email = f"{notification.user_id}@example.com"
-        to_email = "pratmshkush@gmail.com"
+        to_email = settings.smtp_user_email
 
         message = MIMEMultipart("alternative")
         message["From"] = settings.smtp_from
@@ -73,12 +72,8 @@ def deliver_email(self, notification_id: str):
         start_time = time.time()
 
         with smtplib.SMTP(settings.smtp_host, settings.smtp_port) as server:
-            server.ehlo()
-            server.starttls()
-            server.ehlo()
-            server.login(settings.smtp_user, settings.smtp_pass)
             server.sendmail(settings.smtp_from, to_email, message.as_string())
-
+        
         duration = time.time() - start_time
 
         push_metric(

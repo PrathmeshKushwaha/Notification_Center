@@ -1,0 +1,221 @@
+[2026-04-04 16:54:11,383] prat-LOQ-15IAX9/INFO/locust.main: Run time limit set to 60 seconds
+[2026-04-04 16:54:11,383] prat-LOQ-15IAX9/INFO/locust.main: Starting Locust 2.28.0
+[2026-04-04 16:54:11,384] prat-LOQ-15IAX9/INFO/locust.runners: Ramping to 50 users at a rate of 5.00 per second
+[2026-04-04 16:54:20,390] prat-LOQ-15IAX9/INFO/locust.runners: All users spawned: {"NotificationUser": 50} (50 total users)
+[2026-04-04 16:55:11,292] prat-LOQ-15IAX9/INFO/locust.main: --run-time limit reached, shutting down
+[2026-04-04 16:55:11,317] prat-LOQ-15IAX9/INFO/locust.main: Shutting down (exit code 0)
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+GET      /health                                                                          213     0(0.00%) |      2       0      14      3 |    3.56        0.00
+POST     /notify                                                                         1816     0(0.00%) |     22       7     146     22 |   30.34        0.00
+GET      /notify/history?user_id=loadtest-user-00a0ac69                                    10     0(0.00%) |      9       5      13      9 |    0.17        0.00
+GET      /notify/history?user_id=loadtest-user-02ff38d4                                     7     0(0.00%) |      8       4      13      9 |    0.12        0.00
+GET      /notify/history?user_id=loadtest-user-08af48d7                                     4     0(0.00%) |     10       6      18      6 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-0b78a20e                                     3     0(0.00%) |     10       6      13     10 |    0.05        0.00
+GET      /notify/history?user_id=loadtest-user-0c48b4c3                                     7     0(0.00%) |     10       5      15     11 |    0.12        0.00
+GET      /notify/history?user_id=loadtest-user-0d2577cb                                     6     0(0.00%) |      9       6      12      9 |    0.10        0.00
+GET      /notify/history?user_id=loadtest-user-16d87991                                     1     0(0.00%) |      9       9       9      9 |    0.02        0.00
+GET      /notify/history?user_id=loadtest-user-1f42917f                                     7     0(0.00%) |      8       3      17      6 |    0.12        0.00
+GET      /notify/history?user_id=loadtest-user-28713ae1                                     5     0(0.00%) |     12       9      13     13 |    0.08        0.00
+GET      /notify/history?user_id=loadtest-user-3c1a6ea6                                     4     0(0.00%) |     12       8      15     11 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-3eb276c7                                     2     0(0.00%) |      6       3       8      3 |    0.03        0.00
+GET      /notify/history?user_id=loadtest-user-438f807d                                     4     0(0.00%) |      9       5      13      6 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-45236e64                                     5     0(0.00%) |     11       7      19     11 |    0.08        0.00
+GET      /notify/history?user_id=loadtest-user-46464eda                                     1     0(0.00%) |      4       4       4      4 |    0.02        0.00
+GET      /notify/history?user_id=loadtest-user-46fb7755                                     5     0(0.00%) |     10       4      15     10 |    0.08        0.00
+GET      /notify/history?user_id=loadtest-user-4b6881cc                                     3     0(0.00%) |     10       8      11     10 |    0.05        0.00
+GET      /notify/history?user_id=loadtest-user-5e5f9962                                     2     0(0.00%) |     12       4      20      5 |    0.03        0.00
+GET      /notify/history?user_id=loadtest-user-5ee0bc91                                     4     0(0.00%) |     10       6      18      9 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-60e047cb                                     2     0(0.00%) |     10       9      11      9 |    0.03        0.00
+GET      /notify/history?user_id=loadtest-user-66f5d086                                     5     0(0.00%) |     12      10      15     12 |    0.08        0.00
+GET      /notify/history?user_id=loadtest-user-6aa4c781                                     4     0(0.00%) |      8       5      12      8 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-6cb89015                                     1     0(0.00%) |     13      13      13     13 |    0.02        0.00
+GET      /notify/history?user_id=loadtest-user-73c1e464                                     3     0(0.00%) |     10       8      11     11 |    0.05        0.00
+GET      /notify/history?user_id=loadtest-user-7b28519b                                     4     0(0.00%) |      9       9      10     10 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-8361c056                                     4     0(0.00%) |     13       8      18     10 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-89278c33                                     1     0(0.00%) |      9       9       9      9 |    0.02        0.00
+GET      /notify/history?user_id=loadtest-user-8bba0e67                                     7     0(0.00%) |     11       9      16     10 |    0.12        0.00
+GET      /notify/history?user_id=loadtest-user-9d48d178                                     3     0(0.00%) |     14      13      17     13 |    0.05        0.00
+GET      /notify/history?user_id=loadtest-user-a2d474d9                                     1     0(0.00%) |     20      20      20     20 |    0.02        0.00
+GET      /notify/history?user_id=loadtest-user-a9491844                                     4     0(0.00%) |      8       5      11      6 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-b1a74663                                     3     0(0.00%) |     12      10      13     12 |    0.05        0.00
+GET      /notify/history?user_id=loadtest-user-b984430d                                     8     0(0.00%) |     11       6      17     10 |    0.13        0.00
+GET      /notify/history?user_id=loadtest-user-ba257234                                     1     0(0.00%) |     15      15      15     15 |    0.02        0.00
+GET      /notify/history?user_id=loadtest-user-bba19495                                     6     0(0.00%) |      8       5      10      9 |    0.10        0.00
+GET      /notify/history?user_id=loadtest-user-c1040024                                     8     0(0.00%) |     10       3      17     10 |    0.13        0.00
+GET      /notify/history?user_id=loadtest-user-c91fab33                                     3     0(0.00%) |     14      13      14     14 |    0.05        0.00
+GET      /notify/history?user_id=loadtest-user-cd66c240                                     7     0(0.00%) |      8       4      12     10 |    0.12        0.00
+GET      /notify/history?user_id=loadtest-user-d13044ce                                     5     0(0.00%) |      7       5      11      6 |    0.08        0.00
+GET      /notify/history?user_id=loadtest-user-d94723be                                     8     0(0.00%) |     11       6      22     10 |    0.13        0.00
+GET      /notify/history?user_id=loadtest-user-db3068d1                                     3     0(0.00%) |      7       3      12      6 |    0.05        0.00
+GET      /notify/history?user_id=loadtest-user-e17eebdf                                     1     0(0.00%) |     10      10      10     10 |    0.02        0.00
+GET      /notify/history?user_id=loadtest-user-e1abf2a1                                     4     0(0.00%) |     11      10      12     11 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-e5bfaf2e                                     4     0(0.00%) |      9       6      12      8 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-e8370547                                     3     0(0.00%) |      9       7      10     10 |    0.05        0.00
+GET      /notify/history?user_id=loadtest-user-e90bd9e1                                     5     0(0.00%) |     11       7      14     11 |    0.08        0.00
+GET      /notify/history?user_id=loadtest-user-f08380f5                                     3     0(0.00%) |      9       4      13     10 |    0.05        0.00
+GET      /notify/history?user_id=loadtest-user-f1ef64df                                     1     0(0.00%) |     10      10      10     10 |    0.02        0.00
+GET      /notify/history?user_id=loadtest-user-f4939128                                     2     0(0.00%) |      7       5       9      5 |    0.03        0.00
+GET      /notify/history?user_id=loadtest-user-f6f10d7c                                     4     0(0.00%) |     10      10      12     10 |    0.07        0.00
+GET      /notify/history?user_id=loadtest-user-fdbdcab3                                     3     0(0.00%) |     16      12      22     14 |    0.05        0.00
+PUT      /preferences/loadtest-user-00a0ac69                                                1     0(0.00%) |     32      32      32     32 |    0.02        0.00
+PUT      /preferences/loadtest-user-02ff38d4                                                1     0(0.00%) |     14      14      14     14 |    0.02        0.00
+PUT      /preferences/loadtest-user-08af48d7                                                1     0(0.00%) |     23      23      23     23 |    0.02        0.00
+PUT      /preferences/loadtest-user-0b78a20e                                                1     0(0.00%) |     31      31      31     31 |    0.02        0.00
+PUT      /preferences/loadtest-user-0c48b4c3                                                1     0(0.00%) |     26      26      26     26 |    0.02        0.00
+PUT      /preferences/loadtest-user-0d2577cb                                                1     0(0.00%) |     35      35      35     35 |    0.02        0.00
+PUT      /preferences/loadtest-user-16d87991                                                1     0(0.00%) |     14      14      14     14 |    0.02        0.00
+PUT      /preferences/loadtest-user-1f42917f                                                1     0(0.00%) |     35      35      35     35 |    0.02        0.00
+PUT      /preferences/loadtest-user-28713ae1                                                1     0(0.00%) |     38      38      38     38 |    0.02        0.00
+PUT      /preferences/loadtest-user-3c1a6ea6                                                1     0(0.00%) |     18      18      18     18 |    0.02        0.00
+PUT      /preferences/loadtest-user-3eb276c7                                                1     0(0.00%) |     18      18      18     18 |    0.02        0.00
+PUT      /preferences/loadtest-user-438f807d                                                1     0(0.00%) |     23      23      23     23 |    0.02        0.00
+PUT      /preferences/loadtest-user-45236e64                                                1     0(0.00%) |     33      33      33     33 |    0.02        0.00
+PUT      /preferences/loadtest-user-46464eda                                                1     0(0.00%) |     40      40      40     40 |    0.02        0.00
+PUT      /preferences/loadtest-user-46fb7755                                                1     0(0.00%) |     19      19      19     19 |    0.02        0.00
+PUT      /preferences/loadtest-user-4b6881cc                                                1     0(0.00%) |     18      18      18     18 |    0.02        0.00
+PUT      /preferences/loadtest-user-5e5f9962                                                1     0(0.00%) |     39      39      39     39 |    0.02        0.00
+PUT      /preferences/loadtest-user-5ee0bc91                                                1     0(0.00%) |     16      16      16     16 |    0.02        0.00
+PUT      /preferences/loadtest-user-60e047cb                                                1     0(0.00%) |     22      22      22     22 |    0.02        0.00
+PUT      /preferences/loadtest-user-66f5d086                                                1     0(0.00%) |     30      30      30     30 |    0.02        0.00
+PUT      /preferences/loadtest-user-6aa4c781                                                1     0(0.00%) |     26      26      26     26 |    0.02        0.00
+PUT      /preferences/loadtest-user-6cb89015                                                1     0(0.00%) |     37      37      37     37 |    0.02        0.00
+PUT      /preferences/loadtest-user-73c1e464                                                1     0(0.00%) |     31      31      31     31 |    0.02        0.00
+PUT      /preferences/loadtest-user-7b28519b                                                1     0(0.00%) |     34      34      34     34 |    0.02        0.00
+PUT      /preferences/loadtest-user-8361c056                                                1     0(0.00%) |     31      31      31     31 |    0.02        0.00
+PUT      /preferences/loadtest-user-89278c33                                                1     0(0.00%) |     27      27      27     27 |    0.02        0.00
+PUT      /preferences/loadtest-user-8bba0e67                                                1     0(0.00%) |     32      32      32     32 |    0.02        0.00
+PUT      /preferences/loadtest-user-9d48d178                                                1     0(0.00%) |     25      25      25     25 |    0.02        0.00
+PUT      /preferences/loadtest-user-a2d474d9                                                1     0(0.00%) |     42      42      42     42 |    0.02        0.00
+PUT      /preferences/loadtest-user-a9491844                                                1     0(0.00%) |     19      19      19     19 |    0.02        0.00
+PUT      /preferences/loadtest-user-b1a74663                                                1     0(0.00%) |     21      21      21     21 |    0.02        0.00
+PUT      /preferences/loadtest-user-b984430d                                                1     0(0.00%) |     27      27      27     27 |    0.02        0.00
+PUT      /preferences/loadtest-user-ba257234                                                1     0(0.00%) |     36      36      36     36 |    0.02        0.00
+PUT      /preferences/loadtest-user-bba19495                                                1     0(0.00%) |     39      39      39     39 |    0.02        0.00
+PUT      /preferences/loadtest-user-c1040024                                                1     0(0.00%) |     31      31      31     31 |    0.02        0.00
+PUT      /preferences/loadtest-user-c91fab33                                                1     0(0.00%) |     32      32      32     32 |    0.02        0.00
+PUT      /preferences/loadtest-user-cd66c240                                                1     0(0.00%) |     19      19      19     19 |    0.02        0.00
+PUT      /preferences/loadtest-user-d13044ce                                                1     0(0.00%) |     20      20      20     20 |    0.02        0.00
+PUT      /preferences/loadtest-user-d94723be                                                1     0(0.00%) |     34      34      34     34 |    0.02        0.00
+PUT      /preferences/loadtest-user-db3068d1                                                1     0(0.00%) |     25      25      25     25 |    0.02        0.00
+PUT      /preferences/loadtest-user-e17eebdf                                                1     0(0.00%) |     19      19      19     19 |    0.02        0.00
+PUT      /preferences/loadtest-user-e1abf2a1                                                1     0(0.00%) |     16      16      16     16 |    0.02        0.00
+PUT      /preferences/loadtest-user-e5bfaf2e                                                1     0(0.00%) |     42      42      42     42 |    0.02        0.00
+PUT      /preferences/loadtest-user-e8370547                                                1     0(0.00%) |     22      22      22     22 |    0.02        0.00
+PUT      /preferences/loadtest-user-e90bd9e1                                                1     0(0.00%) |     30      30      30     30 |    0.02        0.00
+PUT      /preferences/loadtest-user-f08380f5                                                1     0(0.00%) |     25      25      25     25 |    0.02        0.00
+PUT      /preferences/loadtest-user-f1ef64df                                                1     0(0.00%) |     23      23      23     23 |    0.02        0.00
+PUT      /preferences/loadtest-user-f4939128                                                1     0(0.00%) |     19      19      19     19 |    0.02        0.00
+PUT      /preferences/loadtest-user-f6f10d7c                                                1     0(0.00%) |     29      29      29     29 |    0.02        0.00
+PUT      /preferences/loadtest-user-fdbdcab3                                                1     0(0.00%) |     18      18      18     18 |    0.02        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                      2280     0(0.00%) |     19       0     146     20 |   38.09        0.00
+
+Response time percentiles (approximated)
+Type     Name                                                                                  50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+GET      /health                                                                                 3      3      3      4      4      5      5      6     14     14     14    213
+POST     /notify                                                                                22     25     27     29     32     36     40     44    140    150    150   1816
+GET      /notify/history?user_id=loadtest-user-00a0ac69                                         10     10     12     13     14     14     14     14     14     14     14     10
+GET      /notify/history?user_id=loadtest-user-02ff38d4                                          9     11     13     13     13     13     13     13     13     13     13      7
+GET      /notify/history?user_id=loadtest-user-08af48d7                                         12     12     19     19     19     19     19     19     19     19     19      4
+GET      /notify/history?user_id=loadtest-user-0b78a20e                                         10     10     13     13     13     13     13     13     13     13     13      3
+GET      /notify/history?user_id=loadtest-user-0c48b4c3                                         11     13     15     15     15     15     15     15     15     15     15      7
+GET      /notify/history?user_id=loadtest-user-0d2577cb                                         10     10     11     11     13     13     13     13     13     13     13      6
+GET      /notify/history?user_id=loadtest-user-16d87991                                         10     10     10     10     10     10     10     10     10     10     10      1
+GET      /notify/history?user_id=loadtest-user-1f42917f                                          6     11     11     11     17     17     17     17     17     17     17      7
+GET      /notify/history?user_id=loadtest-user-28713ae1                                         13     13     13     14     14     14     14     14     14     14     14      5
+GET      /notify/history?user_id=loadtest-user-3c1a6ea6                                         14     14     15     15     15     15     15     15     15     15     15      4
+GET      /notify/history?user_id=loadtest-user-3eb276c7                                          9      9      9      9      9      9      9      9      9      9      9      2
+GET      /notify/history?user_id=loadtest-user-438f807d                                         13     13     13     13     13     13     13     13     13     13     13      4
+GET      /notify/history?user_id=loadtest-user-45236e64                                         11     11     11     20     20     20     20     20     20     20     20      5
+GET      /notify/history?user_id=loadtest-user-46464eda                                          4      4      4      4      4      4      4      4      4      4      4      1
+GET      /notify/history?user_id=loadtest-user-46fb7755                                         10     13     13     15     15     15     15     15     15     15     15      5
+GET      /notify/history?user_id=loadtest-user-4b6881cc                                         10     10     12     12     12     12     12     12     12     12     12      3
+GET      /notify/history?user_id=loadtest-user-5e5f9962                                         20     20     20     20     20     20     20     20     20     20     20      2
+GET      /notify/history?user_id=loadtest-user-5ee0bc91                                         10     10     18     18     18     18     18     18     18     18     18      4
+GET      /notify/history?user_id=loadtest-user-60e047cb                                         12     12     12     12     12     12     12     12     12     12     12      2
+GET      /notify/history?user_id=loadtest-user-66f5d086                                         12     15     15     16     16     16     16     16     16     16     16      5
+GET      /notify/history?user_id=loadtest-user-6aa4c781                                          9      9     13     13     13     13     13     13     13     13     13      4
+GET      /notify/history?user_id=loadtest-user-6cb89015                                         13     13     13     13     13     13     13     13     13     13     13      1
+GET      /notify/history?user_id=loadtest-user-73c1e464                                         11     11     11     11     11     11     11     11     11     11     11      3
+GET      /notify/history?user_id=loadtest-user-7b28519b                                         10     10     11     11     11     11     11     11     11     11     11      4
+GET      /notify/history?user_id=loadtest-user-8361c056                                         16     16     19     19     19     19     19     19     19     19     19      4
+GET      /notify/history?user_id=loadtest-user-89278c33                                         10     10     10     10     10     10     10     10     10     10     10      1
+GET      /notify/history?user_id=loadtest-user-8bba0e67                                         10     10     12     12     17     17     17     17     17     17     17      7
+GET      /notify/history?user_id=loadtest-user-9d48d178                                         13     13     18     18     18     18     18     18     18     18     18      3
+GET      /notify/history?user_id=loadtest-user-a2d474d9                                         21     21     21     21     21     21     21     21     21     21     21      1
+GET      /notify/history?user_id=loadtest-user-a9491844                                         11     11     11     11     11     11     11     11     11     11     11      4
+GET      /notify/history?user_id=loadtest-user-b1a74663                                         12     12     14     14     14     14     14     14     14     14     14      3
+GET      /notify/history?user_id=loadtest-user-b984430d                                         11     12     15     15     18     18     18     18     18     18     18      8
+GET      /notify/history?user_id=loadtest-user-ba257234                                         15     15     15     15     15     15     15     15     15     15     15      1
+GET      /notify/history?user_id=loadtest-user-bba19495                                          9      9     10     10     10     10     10     10     10     10     10      6
+GET      /notify/history?user_id=loadtest-user-c1040024                                         12     12     14     14     18     18     18     18     18     18     18      8
+GET      /notify/history?user_id=loadtest-user-c91fab33                                         14     14     14     14     14     14     14     14     14     14     14      3
+GET      /notify/history?user_id=loadtest-user-cd66c240                                         10     11     11     11     13     13     13     13     13     13     13      7
+GET      /notify/history?user_id=loadtest-user-d13044ce                                          6      8      8     11     11     11     11     11     11     11     11      5
+GET      /notify/history?user_id=loadtest-user-d94723be                                         10     12     12     12     22     22     22     22     22     22     22      8
+GET      /notify/history?user_id=loadtest-user-db3068d1                                          6      6     12     12     12     12     12     12     12     12     12      3
+GET      /notify/history?user_id=loadtest-user-e17eebdf                                         10     10     10     10     10     10     10     10     10     10     10      1
+GET      /notify/history?user_id=loadtest-user-e1abf2a1                                         12     12     12     12     12     12     12     12     12     12     12      4
+GET      /notify/history?user_id=loadtest-user-e5bfaf2e                                         10     10     13     13     13     13     13     13     13     13     13      4
+GET      /notify/history?user_id=loadtest-user-e8370547                                         10     10     10     10     10     10     10     10     10     10     10      3
+GET      /notify/history?user_id=loadtest-user-e90bd9e1                                         11     13     13     14     14     14     14     14     14     14     14      5
+GET      /notify/history?user_id=loadtest-user-f08380f5                                         10     10     13     13     13     13     13     13     13     13     13      3
+GET      /notify/history?user_id=loadtest-user-f1ef64df                                         11     11     11     11     11     11     11     11     11     11     11      1
+GET      /notify/history?user_id=loadtest-user-f4939128                                         10     10     10     10     10     10     10     10     10     10     10      2
+GET      /notify/history?user_id=loadtest-user-f6f10d7c                                         10     10     13     13     13     13     13     13     13     13     13      4
+GET      /notify/history?user_id=loadtest-user-fdbdcab3                                         14     14     23     23     23     23     23     23     23     23     23      3
+PUT      /preferences/loadtest-user-00a0ac69                                                    32     32     32     32     32     32     32     32     32     32     32      1
+PUT      /preferences/loadtest-user-02ff38d4                                                    15     15     15     15     15     15     15     15     15     15     15      1
+PUT      /preferences/loadtest-user-08af48d7                                                    24     24     24     24     24     24     24     24     24     24     24      1
+PUT      /preferences/loadtest-user-0b78a20e                                                    32     32     32     32     32     32     32     32     32     32     32      1
+PUT      /preferences/loadtest-user-0c48b4c3                                                    27     27     27     27     27     27     27     27     27     27     27      1
+PUT      /preferences/loadtest-user-0d2577cb                                                    36     36     36     36     36     36     36     36     36     36     36      1
+PUT      /preferences/loadtest-user-16d87991                                                    15     15     15     15     15     15     15     15     15     15     15      1
+PUT      /preferences/loadtest-user-1f42917f                                                    35     35     35     35     35     35     35     35     35     35     35      1
+PUT      /preferences/loadtest-user-28713ae1                                                    38     38     38     38     38     38     38     38     38     38     38      1
+PUT      /preferences/loadtest-user-3c1a6ea6                                                    19     19     19     19     19     19     19     19     19     19     19      1
+PUT      /preferences/loadtest-user-3eb276c7                                                    19     19     19     19     19     19     19     19     19     19     19      1
+PUT      /preferences/loadtest-user-438f807d                                                    23     23     23     23     23     23     23     23     23     23     23      1
+PUT      /preferences/loadtest-user-45236e64                                                    33     33     33     33     33     33     33     33     33     33     33      1
+PUT      /preferences/loadtest-user-46464eda                                                    40     40     40     40     40     40     40     40     40     40     40      1
+PUT      /preferences/loadtest-user-46fb7755                                                    19     19     19     19     19     19     19     19     19     19     19      1
+PUT      /preferences/loadtest-user-4b6881cc                                                    19     19     19     19     19     19     19     19     19     19     19      1
+PUT      /preferences/loadtest-user-5e5f9962                                                    40     40     40     40     40     40     40     40     40     40     40      1
+PUT      /preferences/loadtest-user-5ee0bc91                                                    17     17     17     17     17     17     17     17     17     17     17      1
+PUT      /preferences/loadtest-user-60e047cb                                                    23     23     23     23     23     23     23     23     23     23     23      1
+PUT      /preferences/loadtest-user-66f5d086                                                    30     30     30     30     30     30     30     30     30     30     30      1
+PUT      /preferences/loadtest-user-6aa4c781                                                    26     26     26     26     26     26     26     26     26     26     26      1
+PUT      /preferences/loadtest-user-6cb89015                                                    37     37     37     37     37     37     37     37     37     37     37      1
+PUT      /preferences/loadtest-user-73c1e464                                                    32     32     32     32     32     32     32     32     32     32     32      1
+PUT      /preferences/loadtest-user-7b28519b                                                    35     35     35     35     35     35     35     35     35     35     35      1
+PUT      /preferences/loadtest-user-8361c056                                                    32     32     32     32     32     32     32     32     32     32     32      1
+PUT      /preferences/loadtest-user-89278c33                                                    28     28     28     28     28     28     28     28     28     28     28      1
+PUT      /preferences/loadtest-user-8bba0e67                                                    33     33     33     33     33     33     33     33     33     33     33      1
+PUT      /preferences/loadtest-user-9d48d178                                                    26     26     26     26     26     26     26     26     26     26     26      1
+PUT      /preferences/loadtest-user-a2d474d9                                                    42     42     42     42     42     42     42     42     42     42     42      1
+PUT      /preferences/loadtest-user-a9491844                                                    20     20     20     20     20     20     20     20     20     20     20      1
+PUT      /preferences/loadtest-user-b1a74663                                                    21     21     21     21     21     21     21     21     21     21     21      1
+PUT      /preferences/loadtest-user-b984430d                                                    28     28     28     28     28     28     28     28     28     28     28      1
+PUT      /preferences/loadtest-user-ba257234                                                    36     36     36     36     36     36     36     36     36     36     36      1
+PUT      /preferences/loadtest-user-bba19495                                                    40     40     40     40     40     40     40     40     40     40     40      1
+PUT      /preferences/loadtest-user-c1040024                                                    32     32     32     32     32     32     32     32     32     32     32      1
+PUT      /preferences/loadtest-user-c91fab33                                                    33     33     33     33     33     33     33     33     33     33     33      1
+PUT      /preferences/loadtest-user-cd66c240                                                    20     20     20     20     20     20     20     20     20     20     20      1
+PUT      /preferences/loadtest-user-d13044ce                                                    21     21     21     21     21     21     21     21     21     21     21      1
+PUT      /preferences/loadtest-user-d94723be                                                    35     35     35     35     35     35     35     35     35     35     35      1
+PUT      /preferences/loadtest-user-db3068d1                                                    25     25     25     25     25     25     25     25     25     25     25      1
+PUT      /preferences/loadtest-user-e17eebdf                                                    20     20     20     20     20     20     20     20     20     20     20      1
+PUT      /preferences/loadtest-user-e1abf2a1                                                    17     17     17     17     17     17     17     17     17     17     17      1
+PUT      /preferences/loadtest-user-e5bfaf2e                                                    42     42     42     42     42     42     42     42     42     42     42      1
+PUT      /preferences/loadtest-user-e8370547                                                    22     22     22     22     22     22     22     22     22     22     22      1
+PUT      /preferences/loadtest-user-e90bd9e1                                                    30     30     30     30     30     30     30     30     30     30     30      1
+PUT      /preferences/loadtest-user-f08380f5                                                    26     26     26     26     26     26     26     26     26     26     26      1
+PUT      /preferences/loadtest-user-f1ef64df                                                    24     24     24     24     24     24     24     24     24     24     24      1
+PUT      /preferences/loadtest-user-f4939128                                                    20     20     20     20     20     20     20     20     20     20     20      1
+PUT      /preferences/loadtest-user-f6f10d7c                                                    29     29     29     29     29     29     29     29     29     29     29      1
+PUT      /preferences/loadtest-user-fdbdcab3                                                    19     19     19     19     19     19     19     19     19     19     19      1
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+         Aggregated                                                                             20     24     26     27     32     35     39     43    140    150    150   2280
+
